@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="211dp"
+        app:srcCompat="@drawable/traveloka"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVELOKA,"
+        android:textSize="14pt"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="211dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel, Booking Hotel."
+        android:textSize="14pt"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="253dp"
+        app:layout_goneMarginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editstyletext"
+        android:hint="Email Address"
+        android:inputType="text"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="302dp"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editstyletext"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="364dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@id/edt1"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbutton"
+        android:hint="Login Me"
+        android:padding="15dp"
+        android:textColorHint="#ffffff"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="428dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@id/edt2"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textAlignment="center"
+        android:textSize="9pt"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="527dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/btn1"/>
+</android.support.constraint.ConstraintLayout>

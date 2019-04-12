@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/traveloka"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVELOKA,"
+        android:layout_marginLeft="15dp"
+        android:textSize="14pt"
+        android:layout_below="@id/img1"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel, Booking hotel."
+        android:layout_marginLeft="15dp"
+        android:textSize="12pt"
+        android:layout_below="@id/txt1"/>
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editstyletext"
+        android:hint="Email Address"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/txt2"/>
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/editstyletext"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/edt1"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login Me"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/editbutton"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/edt2"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="9pt"
+        android:text="@string/text"
+        android:layout_below="@id/btn1"/>
+
+</RelativeLayout>

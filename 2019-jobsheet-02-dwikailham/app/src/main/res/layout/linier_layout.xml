@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/traveloka" />
+
+    <TextView
+        android:id="@+id/monstrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVELOKA,"
+        android:layout_marginLeft="15dp"
+        android:textSize="14pt"/>
+
+    <TextView
+        android:id="@+id/monstrain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel, Booking hotel."
+        android:layout_marginLeft="15dp"
+        android:textSize="12pt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editstyletext"
+        android:hint="Email Address"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/editstyletext"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Login Me"
+        android:textColorHint="#ffffff"
+        android:background="@drawable/editbutton"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="9pt"
+        android:text="@string/text"/>
+</LinearLayout>
+</ScrollView>
